@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Прогноз погоды</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body>
+		<main>
+
+      <section class="input">
+        <div class="container">
+          <div class="row">
+            <div class="input-block">
+              <input class="city-target mt-5" type="text" placeholder="Москва" /><button class="mt-3">Узнать</button>
+            </div>
+          </div>
+        </div>
+      </section>
+			<section class="weather-block">
+				<div class="container">
+					<div class="weather">
+						<div class="row">
+							<div class="weather__part">
+								<div class="weather__part-temp">
+									<h1 class="weather__part-temp--value"></h1>
+									<p class="weather__part-temp--stat"></p>
+								</div>
+								<h2 class="weather__part-city"></h2>
+							</div>
+							<div class="weather__stats">
+								<div class="stat">
+									<p class="stat__title">Влажность</p>
+									<p class="stat__value--humidity"></p>
+								</div>
+								<div class="stat">
+									<p class="stat__title">Ветер</p>
+									<p class="stat__value--wind"></p>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="row"> -->
+							<!-- <div class="weather__part">
+								<!-- <div class="feed">
+                  <h2 class="feed__title">
+                    ВК Лента <span title="Город">#Самара</span>
+                  </h2>
+                  <div class="feed__row">
+                    <img
+                      src="https://www.ixbt.com/img/n1/news/2022/5/6/vk_large.jpg"
+                      alt=""
+                      class="feed__row-img"
+                    />
+                    <p class="feed__row-content">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="feed__row">
+                    <img
+                      src="https://www.ixbt.com/img/n1/news/2022/5/6/vk_large.jpg"
+                      alt=""
+                      class="feed__row-img"
+                    />
+                    <p class="feed__row-content">Lorem ipsum, dolor sit</p>
+                  </div>
+                </div> -->
+							<!-- <div class="predict">
+									<div class="predict__day">
+										<h3 class="predict__day-title">ПН</h3>
+										<img
+											src="https://cdn-icons-png.flaticon.com/512/146/146182.png"
+											alt=""
+											class="predict__day-image"
+										/>
+										<p class="predict__day-temp">9°</p>
+										<span class="predict__day-weather">Солнечно</span>
+									</div>
+									<div class="predict__day">
+										<h3 class="predict__day-title">ВТ</h3>
+										<img
+											src="https://cdn-icons-png.flaticon.com/512/146/146182.png"
+											alt=""
+											class="predict__day-image"
+										/>
+										<p class="predict__day-temp">9°</p>
+										<span class="predict__day-weather">Солнечно</span>
+									</div>
+									<div class="predict__day">
+										<h3 class="predict__day-title">СР</h3>
+										<img
+											src="https://cdn-icons-png.flaticon.com/512/146/146182.png"
+											alt=""
+											class="predict__day-image"
+										/>
+										<p class="predict__day-temp">9°</p>
+										<span class="predict__day-weather">Солнечно</span>
+									</div>
+									<div class="predict__day">
+										<h3 class="predict__day-title">ЧТ</h3>
+										<img
+											src="https://cdn-icons-png.flaticon.com/512/146/146182.png"
+											alt=""
+											class="predict__day-image"
+										/>
+										<p class="predict__day-temp">9°</p>
+										<span class="predict__day-weather">Солнечно</span>
+									</div>
+									<div class="predict__day">
+										<h3 class="predict__day-title">ПТ</h3>
+										<img
+											src="https://cdn-icons-png.flaticon.com/512/146/146182.png"
+											alt=""
+											class="predict__day-image"
+										/>
+										<p class="predict__day-temp">9°</p>
+										<span class="predict__day-weather">Солнечно</span>
+									</div>
+								</div> -->
+							<!-- </div>  -->
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="config/main.js"></script>
+	</body>
+</html>
