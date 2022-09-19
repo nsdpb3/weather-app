@@ -1,7 +1,7 @@
 class Weather {
 	_apiKey = "020799ff33e9f809370a24af81f4b3eb";
 	targetcity = document.querySelector(".city-target").value;
-	_url = `http://api.openweathermap.org/data/2.5/weather?q=${this.targetcity}&lang=ru&units=metric&appid=${this._apiKey}`;
+	_url = `https://api.openweathermap.org/data/2.5/weather?q=${this.targetcity}&lang=ru&units=metric&appid=${this._apiKey}`;
 	humidity = document.querySelector(".stat__value--humidity");
 	temp = document.querySelector(".weather__part-temp--value");
 	city = document.querySelector(".weather__part-city");
@@ -19,7 +19,7 @@ class Weather {
 			this.temp.innerHTML = Math.round(res.data.main.temp) + "°";
 			this.city.innerHTML = res.data.name;
 			this.humidity.innerHTML = res.data.main.humidity + "%";
-			this.wind.innerHTML = Math.round(res.data.wind.speed) + "" + "К/М";
+			this.wind.innerHTML = Math.floor(res.data.wind.speed) + "" + "М/С";
 			this.stat.innerHTML = res.data.weather[0].description;
 		});
 	}
